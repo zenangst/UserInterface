@@ -1,0 +1,16 @@
+PODS:
+  - UserInterface (0.1.0)
+
+DEPENDENCIES:
+  - UserInterface (from `../../`)
+
+EXTERNAL SOURCES:
+  UserInterface:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  UserInterface: de0e1fa7d730d30e4edb6c7f6b6f72f95b210c82
+
+PODFILE CHECKSUM: 51ed765bc6f1315e658ac9c1af39c9a5cb562e70
+
+COCOAPODS: 1.5.0
