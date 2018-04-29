@@ -9,6 +9,8 @@
 
 ## Description
 
+<img src="https://github.com/zenangst/UserInterface/blob/master/Images/UserInterface-icon.png?raw=true" alt="UserInterface Icon" align="right" />
+
 **UserInterface** description.
 
 ## Usage
