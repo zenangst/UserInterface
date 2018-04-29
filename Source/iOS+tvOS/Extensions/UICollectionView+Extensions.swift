@@ -2,7 +2,7 @@ import UIKit
 
 public extension UICollectionView {
   convenience init(dataSource: UICollectionViewDataSource? = nil,
-                   layout: UICollectionViewFlowLayout,
+                   layout: UICollectionViewLayout,
                    register cells: UICollectionViewCell.Type ...) {
     self.init(frame: .zero, collectionViewLayout: layout)
     cells.forEach { register($0) }

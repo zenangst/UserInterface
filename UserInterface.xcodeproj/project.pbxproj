@@ -31,6 +31,11 @@
 		BD7221FF2094F43400D28B9C /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7221E42094F39200D28B9C /* NSLayoutConstraint+Extensions.swift */; };
 		BD7222012094F4D500D28B9C /* NSLayoutConstraints+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7222002094F4D500D28B9C /* NSLayoutConstraints+iOS.swift */; };
 		BD7222022094F4D500D28B9C /* NSLayoutConstraints+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7222002094F4D500D28B9C /* NSLayoutConstraints+iOS.swift */; };
+		BD722205209636BB00D28B9C /* NSCollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD722204209636BB00D28B9C /* NSCollectionView+Extensions.swift */; };
+		BD7222072096375800D28B9C /* NSCollectionViewItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7222062096375700D28B9C /* NSCollectionViewItem+Extensions.swift */; };
+		BD722209209637C300D28B9C /* NSStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD722208209637C300D28B9C /* NSStackView+Extensions.swift */; };
+		BD72220B20963FFB00D28B9C /* NSTableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72220A20963FFB00D28B9C /* NSTableView+Extensions.swift */; };
+		BD72220D209640B800D28B9C /* NSTableRowView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72220C209640B800D28B9C /* NSTableRowView+Extensions.swift */; };
 		D284B1051F79038B00D94AF3 /* UserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D284B0FC1F79038B00D94AF3 /* UserInterface.framework */; };
 		D284B1381F7906DB00D94AF3 /* Info-iOS-Tests.plist in Resources */ = {isa = PBXBuildFile; fileRef = D284B12F1F7906DA00D94AF3 /* Info-iOS-Tests.plist */; };
 		D284B1391F7906DB00D94AF3 /* Info-tvOS-Tests.plist in Resources */ = {isa = PBXBuildFile; fileRef = D284B1301F7906DA00D94AF3 /* Info-tvOS-Tests.plist */; };
@@ -82,6 +87,11 @@
 		BD7221F02094F3E000D28B9C /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		BD7221F52094F40100D28B9C /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		BD7222002094F4D500D28B9C /* NSLayoutConstraints+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraints+iOS.swift"; sourceTree = "<group>"; };
+		BD722204209636BB00D28B9C /* NSCollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		BD7222062096375700D28B9C /* NSCollectionViewItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionViewItem+Extensions.swift"; sourceTree = "<group>"; };
+		BD722208209637C300D28B9C /* NSStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSStackView+Extensions.swift"; sourceTree = "<group>"; };
+		BD72220A20963FFB00D28B9C /* NSTableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTableView+Extensions.swift"; sourceTree = "<group>"; };
+		BD72220C209640B800D28B9C /* NSTableRowView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTableRowView+Extensions.swift"; sourceTree = "<group>"; };
 		D284B0FC1F79038B00D94AF3 /* UserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1041F79038B00D94AF3 /* UserInterface-tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UserInterface-tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1181F79039F00D94AF3 /* UserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,9 +210,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		BD722203209636A800D28B9C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD722204209636BB00D28B9C /* NSCollectionView+Extensions.swift */,
+				BD7222062096375700D28B9C /* NSCollectionViewItem+Extensions.swift */,
+				BD722208209637C300D28B9C /* NSStackView+Extensions.swift */,
+				BD72220A20963FFB00D28B9C /* NSTableView+Extensions.swift */,
+				BD72220C209640B800D28B9C /* NSTableRowView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D284B0F41F79024300D94AF3 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				BD722203209636A800D28B9C /* Extensions */,
 				BD7221E02094F34F00D28B9C /* Classes */,
 			);
 			path = macOS;
@@ -667,11 +690,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD72220B20963FFB00D28B9C /* NSTableView+Extensions.swift in Sources */,
+				BD72220D209640B800D28B9C /* NSTableRowView+Extensions.swift in Sources */,
 				BD7221DB2094F2B100D28B9C /* UserInterfaceView.swift in Sources */,
 				BD7221FD2094F43200D28B9C /* NSLayoutConstraint+Extensions.swift in Sources */,
+				BD7222072096375800D28B9C /* NSCollectionViewItem+Extensions.swift in Sources */,
 				BD7221D92094F2AF00D28B9C /* UserInterfaceItem.swift in Sources */,
 				BD7221F92094F41500D28B9C /* View+Extensions.swift in Sources */,
+				BD722205209636BB00D28B9C /* NSCollectionView+Extensions.swift in Sources */,
 				BD7221DA2094F2B100D28B9C /* UserInterfaceLabel.swift in Sources */,
+				BD722209209637C300D28B9C /* NSStackView+Extensions.swift in Sources */,
 				BD7221FB2094F41D00D28B9C /* TypeAlias.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1034,10 +1062,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info-iOS-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.UserInterfaceTests;
@@ -1052,10 +1077,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info-iOS-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.UserInterfaceTests;
@@ -1115,10 +1137,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info-macOS-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -1134,10 +1153,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info-macOS-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
