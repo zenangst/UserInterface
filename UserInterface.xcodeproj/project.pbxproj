@@ -45,6 +45,11 @@
 		BDD89C542097018B0041C951 /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C522097018B0041C951 /* UIViewTests.swift */; };
 		BDD89C56209701D50041C951 /* NSLayoutConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C55209701D50041C951 /* NSLayoutConstraintsTests.swift */; };
 		BDD89C57209701D50041C951 /* NSLayoutConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C55209701D50041C951 /* NSLayoutConstraintsTests.swift */; };
+		BDD89C5D209704F50041C951 /* NSCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C58209704F50041C951 /* NSCollectionViewTests.swift */; };
+		BDD89C5E209704F50041C951 /* NSViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C59209704F50041C951 /* NSViewTests.swift */; };
+		BDD89C5F209704F50041C951 /* NSTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C5A209704F50041C951 /* NSTableViewTests.swift */; };
+		BDD89C60209704F50041C951 /* NSStackViewViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C5B209704F50041C951 /* NSStackViewViewTests.swift */; };
+		BDD89C61209704F50041C951 /* NSLayoutConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C5C209704F50041C951 /* NSLayoutConstraintsTests.swift */; };
 		D284B1051F79038B00D94AF3 /* UserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D284B0FC1F79038B00D94AF3 /* UserInterface.framework */; };
 		D284B1381F7906DB00D94AF3 /* Info-iOS-Tests.plist in Resources */ = {isa = PBXBuildFile; fileRef = D284B12F1F7906DA00D94AF3 /* Info-iOS-Tests.plist */; };
 		D284B1391F7906DB00D94AF3 /* Info-tvOS-Tests.plist in Resources */ = {isa = PBXBuildFile; fileRef = D284B1301F7906DA00D94AF3 /* Info-tvOS-Tests.plist */; };
@@ -53,7 +58,6 @@
 		D284B1451F7908B200D94AF3 /* SharedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B1321F7906DA00D94AF3 /* SharedTests.swift */; };
 		D284B1461F7908B300D94AF3 /* SharedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B1321F7906DA00D94AF3 /* SharedTests.swift */; };
 		D284B1471F7908B800D94AF3 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B1361F7906DA00D94AF3 /* UICollectionViewTests.swift */; };
-		D284B1481F7908BB00D94AF3 /* macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B12E1F7906DA00D94AF3 /* macOSTests.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* UserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* UserInterface.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* UserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* UserInterface.framework */; };
 /* End PBXBuildFile section */
@@ -106,10 +110,14 @@
 		BDD89C4F209700C90041C951 /* UIStackViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewTests.swift; sourceTree = "<group>"; };
 		BDD89C522097018B0041C951 /* UIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTests.swift; sourceTree = "<group>"; };
 		BDD89C55209701D50041C951 /* NSLayoutConstraintsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintsTests.swift; sourceTree = "<group>"; };
+		BDD89C58209704F50041C951 /* NSCollectionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCollectionViewTests.swift; sourceTree = "<group>"; };
+		BDD89C59209704F50041C951 /* NSViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSViewTests.swift; sourceTree = "<group>"; };
+		BDD89C5A209704F50041C951 /* NSTableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTableViewTests.swift; sourceTree = "<group>"; };
+		BDD89C5B209704F50041C951 /* NSStackViewViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSStackViewViewTests.swift; sourceTree = "<group>"; };
+		BDD89C5C209704F50041C951 /* NSLayoutConstraintsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintsTests.swift; sourceTree = "<group>"; };
 		D284B0FC1F79038B00D94AF3 /* UserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1041F79038B00D94AF3 /* UserInterface-tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UserInterface-tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1181F79039F00D94AF3 /* UserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D284B12E1F7906DA00D94AF3 /* macOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = macOSTests.swift; sourceTree = "<group>"; };
 		D284B12F1F7906DA00D94AF3 /* Info-iOS-Tests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS-Tests.plist"; sourceTree = "<group>"; };
 		D284B1301F7906DA00D94AF3 /* Info-tvOS-Tests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS-Tests.plist"; sourceTree = "<group>"; };
 		D284B1321F7906DA00D94AF3 /* SharedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTests.swift; sourceTree = "<group>"; };
@@ -254,7 +262,11 @@
 		D284B12D1F7906DA00D94AF3 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				D284B12E1F7906DA00D94AF3 /* macOSTests.swift */,
+				BDD89C5C209704F50041C951 /* NSLayoutConstraintsTests.swift */,
+				BDD89C58209704F50041C951 /* NSCollectionViewTests.swift */,
+				BDD89C5B209704F50041C951 /* NSStackViewViewTests.swift */,
+				BDD89C5A209704F50041C951 /* NSTableViewTests.swift */,
+				BDD89C59209704F50041C951 /* NSViewTests.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -726,8 +738,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD89C5D209704F50041C951 /* NSCollectionViewTests.swift in Sources */,
+				BDD89C5F209704F50041C951 /* NSTableViewTests.swift in Sources */,
 				D284B1451F7908B200D94AF3 /* SharedTests.swift in Sources */,
-				D284B1481F7908BB00D94AF3 /* macOSTests.swift in Sources */,
+				BDD89C61209704F50041C951 /* NSLayoutConstraintsTests.swift in Sources */,
+				BDD89C60209704F50041C951 /* NSStackViewViewTests.swift in Sources */,
+				BDD89C5E209704F50041C951 /* NSViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
