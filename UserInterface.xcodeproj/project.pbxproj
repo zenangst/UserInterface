@@ -76,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		BD6C775D2096ECC500ADB5BC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BD6C775E2096F89600ADB5BC /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		BD7221D62094F2A900D28B9C /* UserInterfaceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInterfaceItem.swift; sourceTree = "<group>"; };
 		BD7221D72094F2A900D28B9C /* UserInterfaceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInterfaceLabel.swift; sourceTree = "<group>"; };
 		BD7221D82094F2A900D28B9C /* UserInterfaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInterfaceView.swift; sourceTree = "<group>"; };
@@ -285,6 +286,7 @@
 		D5B2E8951C3A780C00C0327D = {
 			isa = PBXGroup;
 			children = (
+				BD6C775E2096F89600ADB5BC /* .travis.yml */,
 				BD6C775D2096ECC500ADB5BC /* README.md */,
 				D500FD111C3AABED00782D78 /* Playground-iOS.playground */,
 				D500FD121C3AAC8E00782D78 /* Playground-macOS.playground */,
