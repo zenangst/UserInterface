@@ -86,9 +86,9 @@ github "zenangst/UserInterface"
 
 ## Author
 
-Christoffer Winterkvist, christoffer@winterkvist.com
-Vadym Markov, markov.vadym@gmail.com
-Khoa Pham, onmyway133@gmail.com
+- Christoffer Winterkvist, christoffer@winterkvist.com
+- Vadym Markov, markov.vadym@gmail.com
+- Khoa Pham, onmyway133@gmail.com
 
 ## Contributing
 
