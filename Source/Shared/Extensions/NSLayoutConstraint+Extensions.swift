@@ -31,7 +31,7 @@ public extension NSLayoutConstraint {
   ///   - activate: Indicates if the constraints should be activated or not.
   ///   - insets: Insets that are applied as constants for the constraints.
   /// - Returns: A collection of layout constraints.
-  public static func pin(_ view: View,
+  @discardableResult public static func pin(_ view: View,
                   toView: View,
                   activate: Bool = true,
                   insets: EdgeInsets = .init(top: 0, left: 0, bottom: 0, right: 0)) -> [NSLayoutConstraint?] {
