@@ -25,13 +25,7 @@ class NSLayoutConstraintsTests: XCTestCase {
     )
 
     XCTAssertEqual(constraints.count, 2)
-
     XCTAssertEqual(constraints[0]?.isActive, false)
-//    XCTAssertEqual(constraints[0]?.firstAnchor, viewA.centerXAnchor)
-//    XCTAssertEqual(constraints[0]?.secondAnchor, viewB.centerXAnchor)
-
     XCTAssertEqual(constraints[1]?.isActive, false)
-//    XCTAssertEqual(constraints[1]?.firstAnchor, viewA.centerYAnchor)
-//    XCTAssertEqual(constraints[1]?.secondAnchor, viewB.centerYAnchor)
   }
 }
