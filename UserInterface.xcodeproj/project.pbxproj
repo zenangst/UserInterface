@@ -115,6 +115,7 @@
 		BDD89C5A209704F50041C951 /* NSTableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTableViewTests.swift; sourceTree = "<group>"; };
 		BDD89C5B209704F50041C951 /* NSStackViewViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSStackViewViewTests.swift; sourceTree = "<group>"; };
 		BDD89C5C209704F50041C951 /* NSLayoutConstraintsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintsTests.swift; sourceTree = "<group>"; };
+		BDD89C6220970DF30041C951 /* UserInterface.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = UserInterface.podspec; sourceTree = "<group>"; };
 		D284B0FC1F79038B00D94AF3 /* UserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1041F79038B00D94AF3 /* UserInterface-tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UserInterface-tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1181F79039F00D94AF3 /* UserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -305,6 +306,7 @@
 		D5B2E8951C3A780C00C0327D = {
 			isa = PBXGroup;
 			children = (
+				BDD89C6220970DF30041C951 /* UserInterface.podspec */,
 				BD6C775E2096F89600ADB5BC /* .travis.yml */,
 				BD6C775D2096ECC500ADB5BC /* README.md */,
 				D500FD111C3AABED00782D78 /* Playground-iOS.playground */,
