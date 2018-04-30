@@ -12,6 +12,7 @@
 <img src="https://github.com/zenangst/UserInterface/blob/master/Images/UserInterface-icon.png?raw=true" alt="UserInterface Icon" align="right" />
 
 **UserInteface** is a collection of convenience extensions specifically tailored to building user interfaces in Swift. It acts as your faithful sidekick boosting your superpowers up to eleven. It covers things like registering cells on your reusable components, setting up constraints without reinventing the wheel and making stack views easier to build and maintain when building them in code.
+The framework does not aim to solve everything, it aims to fix the most common hurdles based on personal experience.
 
 ## Usage
 
@@ -37,6 +38,24 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 ```
 
 ### Setting up constraints
+```swift
+NSLayoutConstraint.constrain(activate: true) {
+  customView.centerXAnchor.constraint(equalTo: centerXAnchor),
+  customView.centerYAnchor.constraint(equalTo: centerYAnchor)
+}
+```
+
+### Pinning a custom view to its super view using constraints
+```swift
+NSLayoutConstraint.pin(customView, 
+                       toView: superview, 
+                       insets: .init(top: 0, left: 30, bottom: 0, right: -30))
+```
+
+### Adding multiple views
+```swift
+view.addSubviews(view1, view2, view3)
+```
 
 ## Installation
 
