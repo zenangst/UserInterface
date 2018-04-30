@@ -11,13 +11,32 @@
 
 <img src="https://github.com/zenangst/UserInterface/blob/master/Images/UserInterface-icon.png?raw=true" alt="UserInterface Icon" align="right" />
 
-**UserInterface** description.
+**UserInteface** is a collection of convenience extensions specifically tailored to building user interfaces in Swift. It acts as your faithful sidekick boosting your superpowers up to eleven. It covers things like registering cells on your reusable components, setting up constraints without reinventing the wheel and making stack views easier to build and maintain when building them in code.
 
 ## Usage
 
+The methods described below use `UITableView` as the example, it works the same way for `UICollectionView`'s.
+It has some additional properties for collection view layouts. To make life even easier, the methods also have macOS
+equivalent so that you don't need to context switch when writing macOS code.
+
+### Setting up and registering cells on reusable components
 ```swift
-<API>
+import UserInterface
+let dataSource = DataSource()
+let tableView = UITableView(dataSource: dataSource, register: Cell.self)
 ```
+### Dequeuing cells in your data source
+```swift
+import UserInterface
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  let model = model(at: indexPath) // Retrieves the model from an array.
+  return tableView.dequeue(Cell.self, with: model(at: indexPath), for: indexPath) { view, model in
+    view.textLabel?.text = model.name
+  }
+}
+```
+
+### Setting up constraints
 
 ## Installation
 
