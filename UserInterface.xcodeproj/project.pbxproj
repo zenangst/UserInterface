@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD6C775F2096F99C00ADB5BC /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B1361F7906DA00D94AF3 /* UICollectionViewTests.swift */; };
 		BD7221D92094F2AF00D28B9C /* UserInterfaceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7221D62094F2A900D28B9C /* UserInterfaceItem.swift */; };
 		BD7221DA2094F2B100D28B9C /* UserInterfaceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7221D72094F2A900D28B9C /* UserInterfaceLabel.swift */; };
 		BD7221DB2094F2B100D28B9C /* UserInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7221D82094F2A900D28B9C /* UserInterfaceView.swift */; };
@@ -36,15 +37,22 @@
 		BD722209209637C300D28B9C /* NSStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD722208209637C300D28B9C /* NSStackView+Extensions.swift */; };
 		BD72220B20963FFB00D28B9C /* NSTableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72220A20963FFB00D28B9C /* NSTableView+Extensions.swift */; };
 		BD72220D209640B800D28B9C /* NSTableRowView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72220C209640B800D28B9C /* NSTableRowView+Extensions.swift */; };
+		BDD89C4D209700020041C951 /* UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C4C209700020041C951 /* UITableViewTests.swift */; };
+		BDD89C4E209700020041C951 /* UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C4C209700020041C951 /* UITableViewTests.swift */; };
+		BDD89C50209700C90041C951 /* UIStackViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C4F209700C90041C951 /* UIStackViewTests.swift */; };
+		BDD89C51209700C90041C951 /* UIStackViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C4F209700C90041C951 /* UIStackViewTests.swift */; };
+		BDD89C532097018B0041C951 /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C522097018B0041C951 /* UIViewTests.swift */; };
+		BDD89C542097018B0041C951 /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C522097018B0041C951 /* UIViewTests.swift */; };
+		BDD89C56209701D50041C951 /* NSLayoutConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C55209701D50041C951 /* NSLayoutConstraintsTests.swift */; };
+		BDD89C57209701D50041C951 /* NSLayoutConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C55209701D50041C951 /* NSLayoutConstraintsTests.swift */; };
 		D284B1051F79038B00D94AF3 /* UserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D284B0FC1F79038B00D94AF3 /* UserInterface.framework */; };
 		D284B1381F7906DB00D94AF3 /* Info-iOS-Tests.plist in Resources */ = {isa = PBXBuildFile; fileRef = D284B12F1F7906DA00D94AF3 /* Info-iOS-Tests.plist */; };
 		D284B1391F7906DB00D94AF3 /* Info-tvOS-Tests.plist in Resources */ = {isa = PBXBuildFile; fileRef = D284B1301F7906DA00D94AF3 /* Info-tvOS-Tests.plist */; };
 		D284B13B1F7906DB00D94AF3 /* Info-macOS-Tests.plist in Resources */ = {isa = PBXBuildFile; fileRef = D284B1331F7906DA00D94AF3 /* Info-macOS-Tests.plist */; };
-		D284B13E1F7907AD00D94AF3 /* tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B13D1F7907AD00D94AF3 /* tvOSTests.swift */; };
 		D284B1441F7908B100D94AF3 /* SharedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B1321F7906DA00D94AF3 /* SharedTests.swift */; };
 		D284B1451F7908B200D94AF3 /* SharedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B1321F7906DA00D94AF3 /* SharedTests.swift */; };
 		D284B1461F7908B300D94AF3 /* SharedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B1321F7906DA00D94AF3 /* SharedTests.swift */; };
-		D284B1471F7908B800D94AF3 /* iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B1361F7906DA00D94AF3 /* iOSTests.swift */; };
+		D284B1471F7908B800D94AF3 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B1361F7906DA00D94AF3 /* UICollectionViewTests.swift */; };
 		D284B1481F7908BB00D94AF3 /* macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B12E1F7906DA00D94AF3 /* macOSTests.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* UserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* UserInterface.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* UserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* UserInterface.framework */; };
@@ -94,6 +102,10 @@
 		BD722208209637C300D28B9C /* NSStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSStackView+Extensions.swift"; sourceTree = "<group>"; };
 		BD72220A20963FFB00D28B9C /* NSTableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTableView+Extensions.swift"; sourceTree = "<group>"; };
 		BD72220C209640B800D28B9C /* NSTableRowView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTableRowView+Extensions.swift"; sourceTree = "<group>"; };
+		BDD89C4C209700020041C951 /* UITableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewTests.swift; sourceTree = "<group>"; };
+		BDD89C4F209700C90041C951 /* UIStackViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewTests.swift; sourceTree = "<group>"; };
+		BDD89C522097018B0041C951 /* UIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTests.swift; sourceTree = "<group>"; };
+		BDD89C55209701D50041C951 /* NSLayoutConstraintsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintsTests.swift; sourceTree = "<group>"; };
 		D284B0FC1F79038B00D94AF3 /* UserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1041F79038B00D94AF3 /* UserInterface-tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UserInterface-tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1181F79039F00D94AF3 /* UserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,8 +114,7 @@
 		D284B1301F7906DA00D94AF3 /* Info-tvOS-Tests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS-Tests.plist"; sourceTree = "<group>"; };
 		D284B1321F7906DA00D94AF3 /* SharedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTests.swift; sourceTree = "<group>"; };
 		D284B1331F7906DA00D94AF3 /* Info-macOS-Tests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS-Tests.plist"; sourceTree = "<group>"; };
-		D284B1361F7906DA00D94AF3 /* iOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSTests.swift; sourceTree = "<group>"; };
-		D284B13D1F7907AD00D94AF3 /* tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSTests.swift; sourceTree = "<group>"; };
+		D284B1361F7906DA00D94AF3 /* UICollectionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewTests.swift; sourceTree = "<group>"; };
 		D284B1401F79081F00D94AF3 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D284B1411F79081F00D94AF3 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		D284B1421F79081F00D94AF3 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
@@ -256,20 +267,16 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		D284B1341F7906DA00D94AF3 /* tvOS */ = {
+		D284B1351F7906DA00D94AF3 /* iOS+tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				D284B13D1F7907AD00D94AF3 /* tvOSTests.swift */,
+				D284B1361F7906DA00D94AF3 /* UICollectionViewTests.swift */,
+				BDD89C4C209700020041C951 /* UITableViewTests.swift */,
+				BDD89C4F209700C90041C951 /* UIStackViewTests.swift */,
+				BDD89C522097018B0041C951 /* UIViewTests.swift */,
+				BDD89C55209701D50041C951 /* NSLayoutConstraintsTests.swift */,
 			);
-			path = tvOS;
-			sourceTree = "<group>";
-		};
-		D284B1351F7906DA00D94AF3 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D284B1361F7906DA00D94AF3 /* iOSTests.swift */,
-			);
-			path = iOS;
+			path = "iOS+tvOS";
 			sourceTree = "<group>";
 		};
 		D284B13F1F79081F00D94AF3 /* Info */ = {
@@ -345,10 +352,9 @@
 				D284B12F1F7906DA00D94AF3 /* Info-iOS-Tests.plist */,
 				D284B1331F7906DA00D94AF3 /* Info-macOS-Tests.plist */,
 				D284B1301F7906DA00D94AF3 /* Info-tvOS-Tests.plist */,
-				D284B1351F7906DA00D94AF3 /* iOS */,
+				D284B1351F7906DA00D94AF3 /* iOS+tvOS */,
 				D284B12D1F7906DA00D94AF3 /* macOS */,
 				D284B1311F7906DA00D94AF3 /* Shared */,
-				D284B1341F7906DA00D94AF3 /* tvOS */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -653,8 +659,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD89C542097018B0041C951 /* UIViewTests.swift in Sources */,
+				BDD89C4E209700020041C951 /* UITableViewTests.swift in Sources */,
+				BD6C775F2096F99C00ADB5BC /* UICollectionViewTests.swift in Sources */,
+				BDD89C57209701D50041C951 /* NSLayoutConstraintsTests.swift in Sources */,
 				D284B1441F7908B100D94AF3 /* SharedTests.swift in Sources */,
-				D284B13E1F7907AD00D94AF3 /* tvOSTests.swift in Sources */,
+				BDD89C51209700C90041C951 /* UIStackViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,8 +695,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD89C532097018B0041C951 /* UIViewTests.swift in Sources */,
+				BDD89C4D209700020041C951 /* UITableViewTests.swift in Sources */,
 				D284B1461F7908B300D94AF3 /* SharedTests.swift in Sources */,
-				D284B1471F7908B800D94AF3 /* iOSTests.swift in Sources */,
+				BDD89C56209701D50041C951 /* NSLayoutConstraintsTests.swift in Sources */,
+				D284B1471F7908B800D94AF3 /* UICollectionViewTests.swift in Sources */,
+				BDD89C50209700C90041C951 /* UIStackViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
