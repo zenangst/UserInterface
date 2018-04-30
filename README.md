@@ -14,6 +14,15 @@
 **UserInteface** is a collection of convenience extensions specifically tailored to building user interfaces in Swift. It acts as your faithful sidekick boosting your superpowers up to eleven. It covers things like registering cells on your reusable components, setting up constraints without reinventing the wheel and making stack views easier to build and maintain when building them in code.
 The framework does not aim to solve everything, it aims to fix the most common hurdles based on personal experience.
 
+## Features
+
+- [x] 🍭Packed with goodies for table & collection views.
+- [x] 🏎Write less and do more.
+- [x] 📐Tamed constraints without reinventing the wheel.
+- [x] 📱iOS support.
+- [x] 💻macOS support.
+- [x] 📺tvOS support.
+
 ## Usage
 
 The methods described below use `UITableView` as the example, it works the same way for `UICollectionView`'s.

@@ -221,12 +221,12 @@
 		BD7221E52094F39C00D28B9C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BD7222002094F4D500D28B9C /* NSLayoutConstraints+iOS.swift */,
 				BD7221E72094F3AB00D28B9C /* UICollectionView+Extensions.swift */,
 				BD7221E62094F3AB00D28B9C /* UICollectionViewCell+Extensions.swift */,
 				BD7221E82094F3BA00D28B9C /* UIStackView+Extensions.swift */,
 				BD7221F02094F3E000D28B9C /* UITableView+Extensions.swift */,
 				BD7221EF2094F3E000D28B9C /* UITableViewCell+Extensions.swift */,
-				BD7222002094F4D500D28B9C /* NSLayoutConstraints+iOS.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -237,8 +237,8 @@
 				BD722204209636BB00D28B9C /* NSCollectionView+Extensions.swift */,
 				BD7222062096375700D28B9C /* NSCollectionViewItem+Extensions.swift */,
 				BD722208209637C300D28B9C /* NSStackView+Extensions.swift */,
-				BD72220A20963FFB00D28B9C /* NSTableView+Extensions.swift */,
 				BD72220C209640B800D28B9C /* NSTableRowView+Extensions.swift */,
+				BD72220A20963FFB00D28B9C /* NSTableView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -262,8 +262,8 @@
 		D284B12D1F7906DA00D94AF3 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				BDD89C5C209704F50041C951 /* NSLayoutConstraintsTests.swift */,
 				BDD89C58209704F50041C951 /* NSCollectionViewTests.swift */,
+				BDD89C5C209704F50041C951 /* NSLayoutConstraintsTests.swift */,
 				BDD89C5B209704F50041C951 /* NSStackViewViewTests.swift */,
 				BDD89C5A209704F50041C951 /* NSTableViewTests.swift */,
 				BDD89C59209704F50041C951 /* NSViewTests.swift */,
@@ -282,11 +282,11 @@
 		D284B1351F7906DA00D94AF3 /* iOS+tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				D284B1361F7906DA00D94AF3 /* UICollectionViewTests.swift */,
-				BDD89C4C209700020041C951 /* UITableViewTests.swift */,
-				BDD89C4F209700C90041C951 /* UIStackViewTests.swift */,
-				BDD89C522097018B0041C951 /* UIViewTests.swift */,
 				BDD89C55209701D50041C951 /* NSLayoutConstraintsTests.swift */,
+				D284B1361F7906DA00D94AF3 /* UICollectionViewTests.swift */,
+				BDD89C4F209700C90041C951 /* UIStackViewTests.swift */,
+				BDD89C4C209700020041C951 /* UITableViewTests.swift */,
+				BDD89C522097018B0041C951 /* UIViewTests.swift */,
 			);
 			path = "iOS+tvOS";
 			sourceTree = "<group>";
