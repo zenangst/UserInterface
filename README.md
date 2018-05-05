@@ -1,6 +1,6 @@
 # UserInterface
 
-[![CI Status](https://img.shields.io/circleci/project/github/zenangst/UserInterface.svg)](https://circleci.com/gh/zenangst/UserInterface)
+[![CI Status](https://travis-ci.org/zenangst/UserInterface.svg?branch=master)](https://travis-ci.org/zenangst/UserInterface)
 [![Version](https://img.shields.io/cocoapods/v/UserInterface.svg?style=flat)](http://cocoadocs.org/docsets/UserInterface)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/UserInterface.svg?style=flat)](http://cocoadocs.org/docsets/UserInterface)
