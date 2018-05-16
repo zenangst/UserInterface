@@ -9,11 +9,13 @@ public extension UICollectionView {
   ///   - layout: The layout that will be used.
   ///   - cells: The cells that should be registred.
   convenience init(dataSource: UICollectionViewDataSource? = nil,
+                   delegate: UICollectionViewDelegate? = nil,
                    layout: UICollectionViewLayout,
                    register cells: UICollectionViewCell.Type ...) {
     self.init(frame: .zero, collectionViewLayout: layout)
     cells.forEach { register($0) }
     self.dataSource = dataSource
+    self.delegate = delegate
   }
 
   /// Register a cell using the cells computed `.reuseIdentifier`.
