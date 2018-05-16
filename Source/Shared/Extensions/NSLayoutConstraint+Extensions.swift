@@ -23,6 +23,22 @@ public extension NSLayoutConstraint {
     return constraints
   }
 
+  /// Add view as a sub view an pin constraints to parent view.
+  ///
+  /// - Parameters:
+  ///   - view: The view that should be added as a subview and pinned.
+  ///   - toView: The view that the should act as the parent for constraints.
+  ///   - activate: Indicates if the constraints should be activated or not.
+  ///   - insets: Insets that are applied as constants for the constraints.
+  /// - Returns: A collection of layout constraints.
+  @discardableResult public static func addAndPin(_ view: View,
+                                                  toView: View,
+                                                  activate: Bool = true,
+                                                  insets: EdgeInsets = .init(top: 0, left: 0, bottom: 0, right: 0))  -> [NSLayoutConstraint?] {
+    toView.addSubview(view)
+    return pin(view, toView: toView, activate: activate, insets: insets)
+  }
+
   /// Pin a view to another view using constraints.
   ///
   /// - Parameters:

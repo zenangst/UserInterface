@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD25DC0C20AC0A3300BFC86C /* UIImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25DC0B20AC0A3300BFC86C /* UIImageViewTests.swift */; };
+		BD25DC0D20AC0A3300BFC86C /* UIImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25DC0B20AC0A3300BFC86C /* UIImageViewTests.swift */; };
+		BD25DC0F20AC0A5C00BFC86C /* UIButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25DC0E20AC0A5C00BFC86C /* UIButtonTests.swift */; };
+		BD25DC1020AC0A5C00BFC86C /* UIButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25DC0E20AC0A5C00BFC86C /* UIButtonTests.swift */; };
+		BD25DC1220AC0A7B00BFC86C /* UILabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25DC1120AC0A7B00BFC86C /* UILabelTests.swift */; };
+		BD25DC1320AC0A7B00BFC86C /* UILabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25DC1120AC0A7B00BFC86C /* UILabelTests.swift */; };
+		BD2CF3ED20AB06C700888874 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2CF3EC20AB06C700888874 /* UILabel+Extensions.swift */; };
+		BD2CF3EE20AB06C700888874 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2CF3EC20AB06C700888874 /* UILabel+Extensions.swift */; };
+		BD2CF3F020AB07C500888874 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2CF3EF20AB07C500888874 /* UIImageView+Extensions.swift */; };
+		BD2CF3F120AB07C500888874 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2CF3EF20AB07C500888874 /* UIImageView+Extensions.swift */; };
+		BD2CF3F320AB0BDC00888874 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2CF3F220AB0BDC00888874 /* UIButton+Extensions.swift */; };
+		BD2CF3F420AB0BDC00888874 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2CF3F220AB0BDC00888874 /* UIButton+Extensions.swift */; };
 		BD6C775F2096F99C00ADB5BC /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284B1361F7906DA00D94AF3 /* UICollectionViewTests.swift */; };
 		BD7221D92094F2AF00D28B9C /* UserInterfaceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7221D62094F2A900D28B9C /* UserInterfaceItem.swift */; };
 		BD7221DA2094F2B100D28B9C /* UserInterfaceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7221D72094F2A900D28B9C /* UserInterfaceLabel.swift */; };
@@ -87,6 +99,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD25DC0B20AC0A3300BFC86C /* UIImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewTests.swift; sourceTree = "<group>"; };
+		BD25DC0E20AC0A5C00BFC86C /* UIButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonTests.swift; sourceTree = "<group>"; };
+		BD25DC1120AC0A7B00BFC86C /* UILabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelTests.swift; sourceTree = "<group>"; };
+		BD2CF3EC20AB06C700888874 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		BD2CF3EF20AB07C500888874 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		BD2CF3F220AB0BDC00888874 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		BD6C775D2096ECC500ADB5BC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BD6C775E2096F89600ADB5BC /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		BD7221D62094F2A900D28B9C /* UserInterfaceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInterfaceItem.swift; sourceTree = "<group>"; };
@@ -222,12 +240,15 @@
 		BD7221E52094F39C00D28B9C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BDD89C63209711220041C951 /* UIStackView+Extensions.swift */,
 				BD7222002094F4D500D28B9C /* NSLayoutConstraints+iOS.swift */,
 				BD7221E72094F3AB00D28B9C /* UICollectionView+Extensions.swift */,
 				BD7221E62094F3AB00D28B9C /* UICollectionViewCell+Extensions.swift */,
+				BDD89C63209711220041C951 /* UIStackView+Extensions.swift */,
 				BD7221F02094F3E000D28B9C /* UITableView+Extensions.swift */,
 				BD7221EF2094F3E000D28B9C /* UITableViewCell+Extensions.swift */,
+				BD2CF3EC20AB06C700888874 /* UILabel+Extensions.swift */,
+				BD2CF3EF20AB07C500888874 /* UIImageView+Extensions.swift */,
+				BD2CF3F220AB0BDC00888874 /* UIButton+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -288,6 +309,9 @@
 				BDD89C4F209700C90041C951 /* UIStackViewTests.swift */,
 				BDD89C4C209700020041C951 /* UITableViewTests.swift */,
 				BDD89C522097018B0041C951 /* UIViewTests.swift */,
+				BD25DC0B20AC0A3300BFC86C /* UIImageViewTests.swift */,
+				BD25DC0E20AC0A5C00BFC86C /* UIButtonTests.swift */,
+				BD25DC1120AC0A7B00BFC86C /* UILabelTests.swift */,
 			);
 			path = "iOS+tvOS";
 			sourceTree = "<group>";
@@ -658,11 +682,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD7221F42094F3E000D28B9C /* UITableView+Extensions.swift in Sources */,
+				BD2CF3F420AB0BDC00888874 /* UIButton+Extensions.swift in Sources */,
 				BD7221EB2094F3BD00D28B9C /* UICollectionView+Extensions.swift in Sources */,
 				BD7221FA2094F41D00D28B9C /* TypeAlias.swift in Sources */,
 				BD7221EC2094F3BD00D28B9C /* UICollectionViewCell+Extensions.swift in Sources */,
 				BD7221F22094F3E000D28B9C /* UITableViewCell+Extensions.swift in Sources */,
 				BD7221FF2094F43400D28B9C /* NSLayoutConstraint+Extensions.swift in Sources */,
+				BD2CF3F120AB07C500888874 /* UIImageView+Extensions.swift in Sources */,
+				BD2CF3EE20AB06C700888874 /* UILabel+Extensions.swift in Sources */,
 				BD7221F72094F41100D28B9C /* View+Extensions.swift in Sources */,
 				BDD89C65209711220041C951 /* UIStackView+Extensions.swift in Sources */,
 				BD7222022094F4D500D28B9C /* NSLayoutConstraints+iOS.swift in Sources */,
@@ -674,9 +701,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD89C542097018B0041C951 /* UIViewTests.swift in Sources */,
+				BD25DC1320AC0A7B00BFC86C /* UILabelTests.swift in Sources */,
 				BDD89C4E209700020041C951 /* UITableViewTests.swift in Sources */,
 				BD6C775F2096F99C00ADB5BC /* UICollectionViewTests.swift in Sources */,
+				BD25DC1020AC0A5C00BFC86C /* UIButtonTests.swift in Sources */,
 				BDD89C57209701D50041C951 /* NSLayoutConstraintsTests.swift in Sources */,
+				BD25DC0D20AC0A3300BFC86C /* UIImageViewTests.swift in Sources */,
 				D284B1441F7908B100D94AF3 /* SharedTests.swift in Sources */,
 				BDD89C51209700C90041C951 /* UIStackViewTests.swift in Sources */,
 			);
@@ -694,11 +724,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD7221F32094F3E000D28B9C /* UITableView+Extensions.swift in Sources */,
+				BD2CF3F320AB0BDC00888874 /* UIButton+Extensions.swift in Sources */,
 				BD7221ED2094F3BE00D28B9C /* UICollectionView+Extensions.swift in Sources */,
 				BD7221FC2094F41E00D28B9C /* TypeAlias.swift in Sources */,
 				BD7221EE2094F3BE00D28B9C /* UICollectionViewCell+Extensions.swift in Sources */,
 				BD7221F12094F3E000D28B9C /* UITableViewCell+Extensions.swift in Sources */,
 				BD7221FE2094F43300D28B9C /* NSLayoutConstraint+Extensions.swift in Sources */,
+				BD2CF3F020AB07C500888874 /* UIImageView+Extensions.swift in Sources */,
+				BD2CF3ED20AB06C700888874 /* UILabel+Extensions.swift in Sources */,
 				BD7221F82094F41200D28B9C /* View+Extensions.swift in Sources */,
 				BDD89C64209711220041C951 /* UIStackView+Extensions.swift in Sources */,
 				BD7222012094F4D500D28B9C /* NSLayoutConstraints+iOS.swift in Sources */,
@@ -710,9 +743,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD89C532097018B0041C951 /* UIViewTests.swift in Sources */,
+				BD25DC1220AC0A7B00BFC86C /* UILabelTests.swift in Sources */,
 				BDD89C4D209700020041C951 /* UITableViewTests.swift in Sources */,
 				D284B1461F7908B300D94AF3 /* SharedTests.swift in Sources */,
+				BD25DC0F20AC0A5C00BFC86C /* UIButtonTests.swift in Sources */,
 				BDD89C56209701D50041C951 /* NSLayoutConstraintsTests.swift in Sources */,
+				BD25DC0C20AC0A3300BFC86C /* UIImageViewTests.swift in Sources */,
 				D284B1471F7908B800D94AF3 /* UICollectionViewTests.swift in Sources */,
 				BDD89C50209700C90041C951 /* UIStackViewTests.swift in Sources */,
 			);

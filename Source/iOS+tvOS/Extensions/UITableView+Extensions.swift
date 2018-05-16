@@ -8,10 +8,12 @@ public extension UITableView {
   ///   - dataSource: The data source that will be used.
   ///   - cells: The cells that should be registred.
   public convenience init(dataSource: UITableViewDataSource? = nil,
-                   register cells: UITableViewCell.Type ...) {
+                          delegate: UITableViewDelegate? = nil,
+                          register cells: UITableViewCell.Type ...) {
     self.init(frame: .zero)
     cells.forEach { register($0) }
     self.dataSource = dataSource
+    self.delegate = delegate
   }
 
   /// Register a cell using the cells computed `.reuseIdentifier`.
