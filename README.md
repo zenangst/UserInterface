@@ -66,6 +66,25 @@ NSLayoutConstraint.pin(customView,
 view.addSubviews(view1, view2, view3)
 ```
 
+### Setting up buttons with title and a type.
+```swift
+let button = UIButton(title: "A", type: .system)
+```
+
+### Creating image views with content mode.
+```swift
+let imageView = UIImageView(image: image, contentMode: .scaleAspectFit)
+```
+
+### Creating labels
+```swift
+let label = UILabel(text: "A",
+                    font: font,
+                    textColor: color,
+                    textAlignment: .center,
+                    numberOfLines: 2)
+```
+
 ## Installation
 
 **UserInterface** is available through [CocoaPods](http://cocoapods.org). To install
