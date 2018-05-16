@@ -35,6 +35,14 @@ class NSLayoutConstraintsTests: XCTestCase {
     XCTAssertEqual(constraints[1]?.secondAnchor, viewB.centerYAnchor)
   }
 
+  func testAddAndPinView() {
+    let pinnedView = UIView()
+    let view = UIView()
+    let constraints = NSLayoutConstraint.addAndPin(pinnedView, toView: view)
+
+    XCTAssertEqual(constraints.count, 4)
+  }
+
   func testConstrainingLayoutGuide() {
     let layoutGuide = UILayoutGuide()
     let view = UIView()
@@ -42,5 +50,14 @@ class NSLayoutConstraintsTests: XCTestCase {
     let constraints = NSLayoutConstraint.pin(layoutGuide, toView: view)
 
     XCTAssertEqual(constraints.count, 4)
+  }
+
+  func testAddAndPinLayoutGuide() {
+    let layoutGuide = UILayoutGuide()
+    let view = UIView()
+    let constraints = NSLayoutConstraint.addAndPin(layoutGuide, toView: view)
+
+    XCTAssertEqual(constraints.count, 4)
+    XCTAssertEqual(layoutGuide.owningView, view)
   }
 }
