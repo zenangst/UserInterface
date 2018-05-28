@@ -12,7 +12,7 @@ public extension NSLayoutConstraint {
   @discardableResult public static func addAndPin(_ layoutGuide: UILayoutGuide,
                                                   toView: View,
                                                   activate: Bool = true,
-                                                  insets: EdgeInsets = .init(top: 0, left: 0, bottom: 0, right: 0))  -> [NSLayoutConstraint?] {
+                                                  insets: EdgeInsets = .init(top: 0, left: 0, bottom: 0, right: 0))  -> [NSLayoutConstraint] {
     toView.addLayoutGuide(layoutGuide)
     return pin(layoutGuide, toView: toView, activate: activate, insets: insets)
   }
@@ -28,7 +28,7 @@ public extension NSLayoutConstraint {
   @discardableResult public static func pin(_ layoutGuide: UILayoutGuide,
                          toView: View,
                          activate: Bool = true,
-                         insets: EdgeInsets = .zero) -> [NSLayoutConstraint?] {
+                         insets: EdgeInsets = .zero) -> [NSLayoutConstraint] {
     let constraints = NSLayoutConstraint.constrain(activate: activate,
       layoutGuide.leadingAnchor.constraint(equalTo: toView.leadingAnchor, constant: insets.left),
       layoutGuide.trailingAnchor.constraint(equalTo: toView.trailingAnchor, constant: -insets.right),
@@ -36,6 +36,6 @@ public extension NSLayoutConstraint {
       layoutGuide.bottomAnchor.constraint(equalTo: toView.bottomAnchor, constant: -insets.bottom)
     )
 
-    return constraints
+    return constraints.compactMap { $0 }
   }
 }
