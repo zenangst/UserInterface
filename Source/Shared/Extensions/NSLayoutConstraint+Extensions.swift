@@ -11,7 +11,7 @@ public extension NSLayoutConstraint {
   ///   - activate: Indicates if the constraints should be activated or not.
   ///   - constraints: The constraints that should be applied.
   /// - Returns: The constraints that was applied to the view.
-  @discardableResult public static func constrain(activate: Bool = true, _ constraints: NSLayoutConstraint?...) -> [NSLayoutConstraint?] {
+  @discardableResult public static func constrain(activate: Bool = true, _ constraints: NSLayoutConstraint?...) -> [NSLayoutConstraint] {
     for constraint in constraints {
       (constraint?.firstItem as? View)?.translatesAutoresizingMaskIntoConstraints = false
     }
@@ -20,7 +20,7 @@ public extension NSLayoutConstraint {
       NSLayoutConstraint.activate(constraints.compactMap { $0 })
     }
 
-    return constraints
+    return constraints.compactMap { $0 }
   }
 
   /// Add view as a sub view an pin constraints to parent view.
