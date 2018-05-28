@@ -50,7 +50,7 @@ public extension NSLayoutConstraint {
   @discardableResult public static func pin(_ view: View,
                   toView: View,
                   activate: Bool = true,
-                  insets: EdgeInsets = .init(top: 0, left: 0, bottom: 0, right: 0)) -> [NSLayoutConstraint?] {
+                  insets: EdgeInsets = .init(top: 0, left: 0, bottom: 0, right: 0)) -> [NSLayoutConstraint] {
     let constraints = NSLayoutConstraint.constrain(activate: activate,
       view.leadingAnchor.constraint(equalTo: toView.leadingAnchor, constant: insets.left),
       view.trailingAnchor.constraint(equalTo: toView.trailingAnchor, constant: -insets.right),
@@ -58,6 +58,6 @@ public extension NSLayoutConstraint {
       view.bottomAnchor.constraint(equalTo: toView.bottomAnchor, constant: -insets.bottom)
     )
 
-    return constraints
+    return constraints.compactMap { $0 }
   }
 }
