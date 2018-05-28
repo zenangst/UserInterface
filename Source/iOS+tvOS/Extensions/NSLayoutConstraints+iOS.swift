@@ -12,7 +12,7 @@ public extension NSLayoutConstraint {
   @discardableResult public static func addAndPin(_ layoutGuide: UILayoutGuide,
                                                   toView: View,
                                                   activate: Bool = true,
-                                                  insets: EdgeInsets = .init(top: 0, left: 0, bottom: 0, right: 0))  -> [NSLayoutConstraint?] {
+                                                  insets: EdgeInsets = .init(top: 0, left: 0, bottom: 0, right: 0))  -> [NSLayoutConstraint] {
     toView.addLayoutGuide(layoutGuide)
     return pin(layoutGuide, toView: toView, activate: activate, insets: insets)
   }

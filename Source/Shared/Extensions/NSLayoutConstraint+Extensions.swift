@@ -34,7 +34,7 @@ public extension NSLayoutConstraint {
   @discardableResult public static func addAndPin(_ view: View,
                                                   toView: View,
                                                   activate: Bool = true,
-                                                  insets: EdgeInsets = .init(top: 0, left: 0, bottom: 0, right: 0))  -> [NSLayoutConstraint?] {
+                                                  insets: EdgeInsets = .init(top: 0, left: 0, bottom: 0, right: 0))  -> [NSLayoutConstraint] {
     toView.addSubview(view)
     return pin(view, toView: toView, activate: activate, insets: insets)
   }
