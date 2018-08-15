@@ -16,11 +16,18 @@ public extension UITableView {
     self.delegate = delegate
   }
 
-  /// Register a cell using the cells computed `.reuseIdentifier`.
+  /// Register a cell(s) using the cells computed `.reuseIdentifier`.
   ///
-  /// - Parameter type: The type of cell that should be registred.
-  public func register(_ type: UITableViewCell.Type) {
-    register(type, forCellReuseIdentifier: type.reuseIdentifier)
+  /// - Parameter types: The type(s) of cell that should be registred.
+  public func register(_ types: UITableViewCell.Type ...) {
+    register(types)
+  }
+
+  /// Register a cell(s) using the cells computed `.reuseIdentifier`.
+  ///
+  /// - Parameter types: The types of cell that should be registred.
+  public func register(_ types: [UITableViewCell.Type]) {
+    types.forEach { type in register(type, forCellReuseIdentifier: type.reuseIdentifier) }
   }
 
   /// Dequeue and configure a cell at a specific index path.
