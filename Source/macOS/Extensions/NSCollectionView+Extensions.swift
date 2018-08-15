@@ -17,11 +17,19 @@ public extension NSCollectionView {
     self.dataSource = dataSource
   }
 
-  /// Register a cell using the cells computed `.reuseIdentifier`.
+  /// Register a cell(s) using the cells computed `.reuseIdentifier`.
   ///
   /// - Parameter type: The type of cell that should be registred.
-  public func register(_ type: NSCollectionViewItem.Type) {
-    register(type, forItemWithIdentifier: NSUserInterfaceItemIdentifier(rawValue: type.reuseIdentifier))
+  public func register(_ types: NSCollectionViewItem.Type ...) {
+    register(types)
+  }
+
+  /// Register a cells using the cells computed `.reuseIdentifier`.
+  ///
+  /// - Parameter types: The types of cell that should be registred.
+  public func register(_ types: [NSCollectionViewItem.Type]) {
+    types.forEach { type in register(type,
+                                     forItemWithIdentifier: NSUserInterfaceItemIdentifier(rawValue: type.reuseIdentifier)) }
   }
 
   /// Dequeue and configure a cell at a specific index path.

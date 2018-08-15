@@ -18,11 +18,29 @@ public extension UICollectionView {
     self.delegate = delegate
   }
 
-  /// Register a cell using the cells computed `.reuseIdentifier`.
+  /// Register a cell(s) using the cells computed `.reuseIdentifier`.
   ///
-  /// - Parameter type: The type of cell that should be registred.
-  public func register(_ type: UICollectionViewCell.Type) {
-    register(type, forCellWithReuseIdentifier: type.reuseIdentifier)
+  /// - Parameter types: The type(s) of cell that should be registred.
+  public func register(_ types: UICollectionViewCell.Type ...) {
+    register(types)
+  }
+
+  /// Register a cells using the cells computed `.reuseIdentifier`.
+  ///
+  /// - Parameter types: The type of cell that should be registred.
+  public func register(_ types: [UICollectionViewCell.Type]) {
+    types.forEach { type in register(type, forCellWithReuseIdentifier: type.reuseIdentifier) }
+  }
+
+  public func dequeue<T: UICollectionViewCell>(_ type: T.Type,
+                                               for indexPath: IndexPath,
+                                               closure: ((T) -> Void)? = nil) -> T {
+    if let cell = dequeueReusableCell(withReuseIdentifier: type.reuseIdentifier, for: indexPath) as? T {
+      closure?(cell)
+      return cell
+    }
+    assertionFailure("Failed to dequeue \(type)")
+    return type.init()
   }
 
   /// Dequeue and configure a cell at a specific index path.
@@ -38,11 +56,11 @@ public extension UICollectionView {
                                            with model: M,
                                            for indexPath: IndexPath,
                                            closure: ((T, M) -> Void)? = nil) -> T {
-    if let cell = dequeueReusableCell(withReuseIdentifier: type.reuseIdentifier, for: indexPath) as? T {
+    if let cell = dequeue(type, for: indexPath, closure: { (cell) in
       closure?(cell, model)
+    }) as? T {
       return cell
     }
-    assertionFailure("Failed to dequeue \(type)")
     return type.init()
   }
 }
