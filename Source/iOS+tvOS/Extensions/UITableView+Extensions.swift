@@ -30,6 +30,18 @@ public extension UITableView {
     types.forEach { type in register(type, forCellReuseIdentifier: type.reuseIdentifier) }
   }
 
+  public func dequeue<T: UITableViewCell>(_ type: T.Type,
+                                               for indexPath: IndexPath,
+                                               then handler: ((T) -> Void)? = nil) -> T {
+    guard let cell = dequeueReusableCell(withIdentifier: type.reuseIdentifier, for: indexPath) as? T else {
+      assertionFailure("Failed to dequeue \(type)")
+      return type.init()
+    }
+
+    handler?(cell)
+    return cell
+  }
+
   /// Dequeue and configure a cell at a specific index path.
   /// Commonly used inside the table view's data source.
   ///
@@ -42,12 +54,10 @@ public extension UITableView {
   public func dequeue<T: UITableViewCell, M>(_ type: T.Type,
                                       with model: M,
                                       for indexPath: IndexPath,
-                                      closure: ((T, M) -> Void)? = nil) -> T {
-    if let cell = dequeueReusableCell(withIdentifier: type.reuseIdentifier, for: indexPath) as? T {
-      closure?(cell, model)
-      return cell
-    }
-    assertionFailure("Failed to dequeue \(type)")
-    return type.init()
+                                      then handler: ((T, M) -> Void)? = nil) -> T {
+    let cell = dequeue(type, for: indexPath, then: { cell in
+      handler?(cell, model)
+    })
+    return cell
   }
 }

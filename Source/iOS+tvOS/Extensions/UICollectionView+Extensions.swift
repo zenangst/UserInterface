@@ -34,13 +34,14 @@ public extension UICollectionView {
 
   public func dequeue<T: UICollectionViewCell>(_ type: T.Type,
                                                for indexPath: IndexPath,
-                                               closure: ((T) -> Void)? = nil) -> T {
-    if let cell = dequeueReusableCell(withReuseIdentifier: type.reuseIdentifier, for: indexPath) as? T {
-      closure?(cell)
-      return cell
+                                               then handler: ((T) -> Void)? = nil) -> T {
+    guard let cell = dequeueReusableCell(withReuseIdentifier: type.reuseIdentifier, for: indexPath) as? T else {
+      assertionFailure("Failed to dequeue \(type)")
+      return type.init()
     }
-    assertionFailure("Failed to dequeue \(type)")
-    return type.init()
+
+    handler?(cell)
+    return cell
   }
 
   /// Dequeue and configure a cell at a specific index path.
@@ -55,12 +56,10 @@ public extension UICollectionView {
   public func dequeue<T: UICollectionViewCell, M>(_ type: T.Type,
                                            with model: M,
                                            for indexPath: IndexPath,
-                                           closure: ((T, M) -> Void)? = nil) -> T {
-    if let cell = dequeue(type, for: indexPath, closure: { (cell) in
-      closure?(cell, model)
-    }) as? T {
-      return cell
-    }
-    return type.init()
+                                           then handler: ((T, M) -> Void)? = nil) -> T {
+    let cell = dequeue(type, for: indexPath, then: { cell in
+      handler?(cell, model)
+    })
+    return cell
   }
 }
