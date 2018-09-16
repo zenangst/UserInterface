@@ -62,6 +62,8 @@
 		BDD89C61209704F50041C951 /* NSLayoutConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C5C209704F50041C951 /* NSLayoutConstraintsTests.swift */; };
 		BDD89C64209711220041C951 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C63209711220041C951 /* UIStackView+Extensions.swift */; };
 		BDD89C65209711220041C951 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD89C63209711220041C951 /* UIStackView+Extensions.swift */; };
+		BDF8BCFD214D8A6D00D1C5E1 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8BCFC214D8A6D00D1C5E1 /* UIView+Extensions.swift */; };
+		BDF8BCFE214D8A6D00D1C5E1 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8BCFC214D8A6D00D1C5E1 /* UIView+Extensions.swift */; };
 		BDF8BD00214D8D5700D1C5E1 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8BCFF214D8D5700D1C5E1 /* UITextField+Extensions.swift */; };
 		BDF8BD01214D8D5700D1C5E1 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8BCFF214D8D5700D1C5E1 /* UITextField+Extensions.swift */; };
 		D284B1051F79038B00D94AF3 /* UserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D284B0FC1F79038B00D94AF3 /* UserInterface.framework */; };
@@ -136,6 +138,7 @@
 		BDD89C5C209704F50041C951 /* NSLayoutConstraintsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintsTests.swift; sourceTree = "<group>"; };
 		BDD89C6220970DF30041C951 /* UserInterface.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = UserInterface.podspec; sourceTree = "<group>"; };
 		BDD89C63209711220041C951 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		BDF8BCFC214D8A6D00D1C5E1 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		BDF8BCFF214D8D5700D1C5E1 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		D284B0FC1F79038B00D94AF3 /* UserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1041F79038B00D94AF3 /* UserInterface-tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UserInterface-tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -252,6 +255,7 @@
 				BD2CF3EC20AB06C700888874 /* UILabel+Extensions.swift */,
 				BD2CF3EF20AB07C500888874 /* UIImageView+Extensions.swift */,
 				BD2CF3F220AB0BDC00888874 /* UIButton+Extensions.swift */,
+				BDF8BCFC214D8A6D00D1C5E1 /* UIView+Extensions.swift */,
 				BDF8BCFF214D8D5700D1C5E1 /* UITextField+Extensions.swift */,
 			);
 			path = Extensions;
@@ -690,6 +694,7 @@
 				BD7221EB2094F3BD00D28B9C /* UICollectionView+Extensions.swift in Sources */,
 				BD7221FA2094F41D00D28B9C /* TypeAlias.swift in Sources */,
 				BD7221EC2094F3BD00D28B9C /* UICollectionViewCell+Extensions.swift in Sources */,
+				BDF8BCFE214D8A6D00D1C5E1 /* UIView+Extensions.swift in Sources */,
 				BD7221F22094F3E000D28B9C /* UITableViewCell+Extensions.swift in Sources */,
 				BDF8BD01214D8D5700D1C5E1 /* UITextField+Extensions.swift in Sources */,
 				BD7221FF2094F43400D28B9C /* NSLayoutConstraint+Extensions.swift in Sources */,
@@ -733,6 +738,7 @@
 				BD7221ED2094F3BE00D28B9C /* UICollectionView+Extensions.swift in Sources */,
 				BD7221FC2094F41E00D28B9C /* TypeAlias.swift in Sources */,
 				BD7221EE2094F3BE00D28B9C /* UICollectionViewCell+Extensions.swift in Sources */,
+				BDF8BCFD214D8A6D00D1C5E1 /* UIView+Extensions.swift in Sources */,
 				BD7221F12094F3E000D28B9C /* UITableViewCell+Extensions.swift in Sources */,
 				BDF8BD00214D8D5700D1C5E1 /* UITextField+Extensions.swift in Sources */,
 				BD7221FE2094F43300D28B9C /* NSLayoutConstraint+Extensions.swift in Sources */,
