@@ -66,6 +66,9 @@
 		BDF8BCFE214D8A6D00D1C5E1 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8BCFC214D8A6D00D1C5E1 /* UIView+Extensions.swift */; };
 		BDF8BD00214D8D5700D1C5E1 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8BCFF214D8D5700D1C5E1 /* UITextField+Extensions.swift */; };
 		BDF8BD01214D8D5700D1C5E1 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8BCFF214D8D5700D1C5E1 /* UITextField+Extensions.swift */; };
+		BDF8BD04214D8F0D00D1C5E1 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8BD03214D8F0D00D1C5E1 /* Shadow.swift */; };
+		BDF8BD05214D8F0D00D1C5E1 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8BD03214D8F0D00D1C5E1 /* Shadow.swift */; };
+		BDF8BD06214D8F0D00D1C5E1 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8BD03214D8F0D00D1C5E1 /* Shadow.swift */; };
 		D284B1051F79038B00D94AF3 /* UserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D284B0FC1F79038B00D94AF3 /* UserInterface.framework */; };
 		D284B1381F7906DB00D94AF3 /* Info-iOS-Tests.plist in Resources */ = {isa = PBXBuildFile; fileRef = D284B12F1F7906DA00D94AF3 /* Info-iOS-Tests.plist */; };
 		D284B1391F7906DB00D94AF3 /* Info-tvOS-Tests.plist in Resources */ = {isa = PBXBuildFile; fileRef = D284B1301F7906DA00D94AF3 /* Info-tvOS-Tests.plist */; };
@@ -140,6 +143,7 @@
 		BDD89C63209711220041C951 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 		BDF8BCFC214D8A6D00D1C5E1 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		BDF8BCFF214D8D5700D1C5E1 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		BDF8BD03214D8F0D00D1C5E1 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
 		D284B0FC1F79038B00D94AF3 /* UserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1041F79038B00D94AF3 /* UserInterface-tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UserInterface-tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1181F79039F00D94AF3 /* UserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,14 +251,14 @@
 			isa = PBXGroup;
 			children = (
 				BD7222002094F4D500D28B9C /* NSLayoutConstraints+iOS.swift */,
+				BD2CF3F220AB0BDC00888874 /* UIButton+Extensions.swift */,
 				BD7221E72094F3AB00D28B9C /* UICollectionView+Extensions.swift */,
 				BD7221E62094F3AB00D28B9C /* UICollectionViewCell+Extensions.swift */,
+				BD2CF3EF20AB07C500888874 /* UIImageView+Extensions.swift */,
+				BD2CF3EC20AB06C700888874 /* UILabel+Extensions.swift */,
 				BDD89C63209711220041C951 /* UIStackView+Extensions.swift */,
 				BD7221F02094F3E000D28B9C /* UITableView+Extensions.swift */,
 				BD7221EF2094F3E000D28B9C /* UITableViewCell+Extensions.swift */,
-				BD2CF3EC20AB06C700888874 /* UILabel+Extensions.swift */,
-				BD2CF3EF20AB07C500888874 /* UIImageView+Extensions.swift */,
-				BD2CF3F220AB0BDC00888874 /* UIButton+Extensions.swift */,
 				BDF8BCFC214D8A6D00D1C5E1 /* UIView+Extensions.swift */,
 				BDF8BCFF214D8D5700D1C5E1 /* UITextField+Extensions.swift */,
 			);
@@ -271,6 +275,14 @@
 				BD72220A20963FFB00D28B9C /* NSTableView+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BDF8BD02214D8EFD00D1C5E1 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				BDF8BD03214D8F0D00D1C5E1 /* Shadow.swift */,
+			);
+			path = Structs;
 			sourceTree = "<group>";
 		};
 		D284B0F41F79024300D94AF3 /* macOS */ = {
@@ -386,6 +398,7 @@
 		D5C6296E1C3A809D007F7B7C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BDF8BD02214D8EFD00D1C5E1 /* Structs */,
 				BD7221E32094F38A00D28B9C /* Extensions */,
 				BD7221E12094F36F00D28B9C /* TypeAlias */,
 			);
@@ -701,6 +714,7 @@
 				BD2CF3F120AB07C500888874 /* UIImageView+Extensions.swift in Sources */,
 				BD2CF3EE20AB06C700888874 /* UILabel+Extensions.swift in Sources */,
 				BD7221F72094F41100D28B9C /* View+Extensions.swift in Sources */,
+				BDF8BD06214D8F0D00D1C5E1 /* Shadow.swift in Sources */,
 				BDD89C65209711220041C951 /* UIStackView+Extensions.swift in Sources */,
 				BD7222022094F4D500D28B9C /* NSLayoutConstraints+iOS.swift in Sources */,
 			);
@@ -745,6 +759,7 @@
 				BD2CF3F020AB07C500888874 /* UIImageView+Extensions.swift in Sources */,
 				BD2CF3ED20AB06C700888874 /* UILabel+Extensions.swift in Sources */,
 				BD7221F82094F41200D28B9C /* View+Extensions.swift in Sources */,
+				BDF8BD04214D8F0D00D1C5E1 /* Shadow.swift in Sources */,
 				BDD89C64209711220041C951 /* UIStackView+Extensions.swift in Sources */,
 				BD7222012094F4D500D28B9C /* NSLayoutConstraints+iOS.swift in Sources */,
 			);
@@ -779,6 +794,7 @@
 				BD7221F92094F41500D28B9C /* View+Extensions.swift in Sources */,
 				BD722205209636BB00D28B9C /* NSCollectionView+Extensions.swift in Sources */,
 				BD7221DA2094F2B100D28B9C /* UserInterfaceLabel.swift in Sources */,
+				BDF8BD05214D8F0D00D1C5E1 /* Shadow.swift in Sources */,
 				BD722209209637C300D28B9C /* NSStackView+Extensions.swift in Sources */,
 				BD7221FB2094F41D00D28B9C /* TypeAlias.swift in Sources */,
 			);
