@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "UserInterface"
   s.summary          = "A collection of convenience extensions specifically tailored to building user interfaces in Swift."
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.homepage         = "https://github.com/zenangst/UserInterface"
   s.license          = 'MIT'
   s.author           = { "Christoffer Winterkvist" => "christoffer@winterkvist.com" }
