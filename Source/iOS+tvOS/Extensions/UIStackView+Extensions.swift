@@ -11,11 +11,13 @@ public extension UIStackView {
   ///   - views: The views that should be added to the stack view.
   public convenience init(_ direction: UILayoutConstraintAxis = .horizontal,
                    alignment: UIStackViewAlignment = .fill,
+                   distribution: UIStackView.Distribution = .fill,
                    spacing: CGFloat,
                    views: [UIView]) {
     self.init(arrangedSubviews: views)
     self.axis = direction
     self.alignment = alignment
+    self.distribution = distribution
     self.spacing = spacing
   }
 
@@ -29,8 +31,13 @@ public extension UIStackView {
   ///   - views: The views that should be added to the stack view.
   public convenience init(_ direction: UILayoutConstraintAxis = .horizontal,
                    alignment: UIStackViewAlignment = .fill,
+                   distribution: UIStackView.Distribution = .fill,
                    spacing: CGFloat,
                    views: UIView ...) {
-    self.init(direction, alignment: alignment, spacing: spacing, views: views)
+    self.init(direction,
+              alignment: alignment,
+              distribution: distribution,
+              spacing: spacing,
+              views: views)
   }
 }
