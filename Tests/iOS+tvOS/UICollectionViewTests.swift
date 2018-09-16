@@ -14,7 +14,6 @@ class UICollectionViewTests: XCTestCase {
     }
   }
 
-
   func testInitCollectionView() {
     let dataSource = DataSourceMock()
     let layout = UICollectionViewFlowLayout()
