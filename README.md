@@ -56,9 +56,7 @@ NSLayoutConstraint.constrain(activate: true) {
 
 ### Pinning a custom view to its super view using constraints
 ```swift
-NSLayoutConstraint.pin(customView, 
-                       toView: superview, 
-                       insets: .init(top: 0, left: 30, bottom: 0, right: -30))
+superview.addSubview(customView, pin: true, insets: .init(top: 0, left: 30, bottom: 0, right: -30))
 ```
 
 ### Adding multiple views
