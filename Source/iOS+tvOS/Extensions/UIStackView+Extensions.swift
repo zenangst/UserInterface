@@ -9,8 +9,8 @@ public extension UIStackView {
   ///   - alignment: The alignment of the stack view, defaults to `.fill`.
   ///   - spacing: The spacing between the view.
   ///   - views: The views that should be added to the stack view.
-  public convenience init(_ direction: UILayoutConstraintAxis = .horizontal,
-                   alignment: UIStackViewAlignment = .fill,
+  public convenience init(_ direction: NSLayoutConstraint.Axis = .horizontal,
+                          alignment: UIStackView.Alignment = .fill,
                    distribution: UIStackView.Distribution = .fill,
                    spacing: CGFloat,
                    views: [UIView]) {
@@ -29,8 +29,8 @@ public extension UIStackView {
   ///   - alignment: The alignment of the stack view, defaults to `.fill`.
   ///   - spacing: The spacing between the view.
   ///   - views: The views that should be added to the stack view.
-  public convenience init(_ direction: UILayoutConstraintAxis = .horizontal,
-                   alignment: UIStackViewAlignment = .fill,
+  public convenience init(_ direction: NSLayoutConstraint.Axis = .horizontal,
+                          alignment: UIStackView.Alignment = .fill,
                    distribution: UIStackView.Distribution = .fill,
                    spacing: CGFloat,
                    views: UIView ...) {
